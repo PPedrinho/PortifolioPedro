@@ -138,7 +138,11 @@
         <!-- Contato -->
         <section class="secao-contato" id="contato">
             <h2>Entre em <span>Contato!</span></h2>
-            <form action="">
+            <form action="https://formsubmit.co/peulima2004@gmail.com" method="POST" target="_blank">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="index.html">
+                <input type="hidden" name="_subject" value="Novo contato do portfólio">
+                
                 <div>
                     <input type="text" name="nome" placeholder="Nome Completo" required>
                 </div>
@@ -146,10 +150,10 @@
                     <input type="email" name="email" placeholder="Email" required>
                 </div>
                 <div>
-                    <textarea name="mensagem" placeholder="Digite sua mensagem" rows="5"></textarea>
+                    <textarea name="mensagem" placeholder="Digite sua mensagem" rows="5" required></textarea>
                 </div>
                 <div>
-                    <button class="btn btn-primario">ENVIAR MENSAGEM</button>
+                    <button type="submit" class="btn btn-primario">ENVIAR MENSAGEM</button>
                 </div>
             </form>
             <div class="contato_github">
