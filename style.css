@@ -100,7 +100,6 @@ section.secao-hero {
   margin-top: 2rem;
   max-height: 400px;
   object-fit: contain;
-  
 }
 
 .icones-sociais {
@@ -185,6 +184,7 @@ section.secao-sobre {
   align-items: center;
   padding: 3rem 2rem;
   text-align: center;
+  justify-content: center;
 }
 
 .imagem-sobre img {
@@ -195,6 +195,8 @@ section.secao-sobre {
   border: 3px solid var(--cor1);
   box-shadow: 3px 5px 30px #03506e;
   object-fit: cover;
+  align-items: center;
+  justify-content: center;
 }
 
 .conteudo-sobre {
