@@ -1,79 +1,180 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio Pedro</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./assets/favicon-16x16.png" type="image/x-icon">
-    <script defer src="script.js"></script>
+    <link rel="icon" href="favPedro.png">
+    <link rel="shortcut icon" href="favPedro.png" type="image/x-icon">
+    <title>Portfólio - Pedro Lima</title>
+    <script src="https://kit.fontawesome.com/a9cdbedf57.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" id="temaEstilo" href="style.css">
 </head>
+
 <body>
     <header>
-        <div class="profile">
-            <img src="./assets/pedro.jpeg" alt="Foto de Perfil">
-            <h1>Pedro Lima</h1>
+        <div>
+            <a href="./index.html"><span class="logo">Pedro Lima</span></a>
         </div>
-        <nav>
+        <div>
             <ul>
-                <li><a href="#experiencia">Experiência</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#projetos">Projetos</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
             </ul>
-        </nav>
-        <div class="social">
-            <a href="https://github.com/PPedrinho" target="_blank"><img src="./assets/github.png" alt="Github" class="logo"></a>
-            <a href="https://www.linkedin.com/in/pedro-lima-54a5b3240/" target="_blank"><img src="./assets/linkedin.png" alt="Linkedin " class="logo"></a>
         </div>
     </header>
 
     <main>
-        <section id="experiencia">
-            <div class="card">
-            <h2>Experiência</h2>
-            <p> Estágiario ABAP na SapienEx <br>
-                Gerente de Eletrônica na CalangoTec Baja <br>
-                Graduando em Engenharia de Computação 
-            </p>
-            </div>
-        </section>
+        <!-- Inicio -->
+        <section class="secao-hero" id="inicio">
+            <div>
+                <div>
+                    <h4 title="Olá, Como você está?">Olá!</h4>
+                    <h2 class="secao-hero_titulo">Sou <span>Pedro</span></h2>
+                    <p class="secao-hero_descricao">Sou um futuro engenheiro de computação, apaixonado por tecnologias de desenvolvimento e pela criação de soluções inovadoras.</p>
+                </div>
 
-        <section id="habilidades">
-            <div class="card">
-            <h2>Linguagens de Programação</h2>
-            <p>
-                HTML, CSS, JS <br>
-                C / C++ <br>
-                Java <br>
-                React <br>
-                Typescript.
-            </p>
-            </div>
-        </section>
+                <ul class="icones-sociais">
+                    
+                    <li>
+                        <a href="https://www.linkedin.com/in/pedro-lima-54a5b3240/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/peulima04/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
 
-        <section id="projetos">
-            <div class="projeto">
-                <h2>Projetos</h2>
-                <p>Veja alguns dos meus projetos abaixo:</p>        
-            </div>
-
-            <div class="card">
-                
-                    <h3>Projeto 1</h3>
-                    <p>Atuei como Freelancer desenvolvendo um sistema de cadastro de atendimento de pacientes para um hospital, utilizando Excel com VBA e macros. O projeto incluiu a criação de uma interface intuitiva para entrada de dados, que permite a inserção automática de informações diretamente nas planilhas.</p>
+                <div class="botoes-hero">
+                    <button class="btn btn-primario">
+                        <a href="./assets/my resume/my resume.pdf" download>Baixar CV</a>
+                    </button>
                 </div>
             </div>
-            <div class="card">
-                
-                <h3>Projeto 2</h3>
-                <p>Atuei na construção de um Sistema Web para a empresa Resgate Prático, na Trilha Profissional Técnico Gestor. </p>
+
+        </section>
+
+        <!-- Sobre -->
+        <section class="secao-sobre" id="sobre">
+
+            <div class="imagem-sobre">
+                <img src="assets/pedro.jpeg" alt="Pedro-portfolio">
             </div>
-            <div class="card">
-                <h3>Projeto 3</h3>
-                <p>Atualmente atuo como Gerente do Subsistema Eletrônica da organização estudantil CalangoTec Baja, onde trabalhamos com Sistemas Embarcados, montagem de circuitos, plotagens no Wokwi, manuseio de sensores, Arduino, ESP32 e atualmente, na construção de um WebSite para organização. </p>
+
+            <div class="conteudo-sobre">
+                <h2><span>Sobre mim</span></h2>
+                
+                <p>Estou no 7º semestre de Engenharia de Computação no SENAI CIMATEC. Atualmente sou estagiário na Sapien Ex, onde atuo com SAP nos módulos FI, MM e SD, além de desenvolver e manter programas ABAP, CDS Views e aplicações FIORI.
+                    <br>
+                    Tenho experiência com linguagens como C, C++, Java, Python, SQL e Arduino, além de tecnologias web como HTML, CSS, JavaScript, React, TypeScript, Node.js e Tailwind. Faço parte da equipe CalangoTec Baja, onde lidero o subsistema de eletrônica, trabalhando com sistemas embarcados, sensores, ESP32, circuitos e o desenvolvimento de um site para a equipe.
+                </p>
+
+                <button class="btn btn-primario">
+                    <a href="https://github.com/PPedrinho" target="_blank">
+                        Saiba Mais <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    </a>
+                </button>
+            </div>
+        </section>
+
+                <!-- Projetos -->
+        <section class="secao-projetos" id="projetos">
+            <h2>Meus <span>Projetos</span></h2>
+            <div class="cartoes-projetos">
+                <div class="caixa-cartao-projeto">
+                    
+                    <div class="card">
+                        <img src="assets/ticket.png" alt="Imagem do Projeto" class="card-img">
+                        <div class="card-content">
+                            <h4>Ticket Generator</h4>
+                            <p>Gerador de tickets em HTML, CSS e JavaScript.</p>
+                        </div>
+                    </div>
+                    <div class="caixa-cartao-projeto_botoes">
+
+                        <button class="btn btn-escuro-desenhado">
+                            <a href="https://github.com/PPedrinho/Ticket-Generator" target="_blank">Ver <i class="fa-solid fa-external-link"></i></a>
+                        </button>
+                        
+                    </div>
+                </div>
+
+                <div class="caixa-cartao-projeto">
+                    <div class="card">
+                        <img src="assets/ageCalc.png" alt="Imagem do Projeto" class="card-img">
+                        <div class="card-content">
+                            <h4>Age Calculator</h4>
+                            <p>Calculadora de Idades em React, TypeScript e Tailwind.</p>
+                        </div>
+                    </div>
+                    <div class="caixa-cartao-projeto_botoes">
+                        <button class="btn btn-escuro-desenhado">
+                            <a href="https://github.com/PPedrinho/Age-Calculator" target="_blank">Ver <i class="fa-solid fa-external-link"></i></a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="caixa-cartao-projeto">
+                    <div class="card">
+                        <img src="assets/manut.jpg" alt="Imagem do Projeto" class="card-img">
+                        <div class="card-content">
+                            <h4>RankEat</h4>
+                            <p>Projeto final da disciplina em React, TypeScript e Tailwind.</p>
+                        </div>
+                    </div>
+                    <div class="caixa-cartao-projeto_botoes">
+                        <button class="btn btn-escuro-desenhado">
+                            <a href="https://github.com/biaag10/RankEat" target="_blank">Ver <i class="fa-solid fa-external-link"></i></a>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section class="secao-contato" id="contato">
+            <h2>Entre em <span>Contato!</span></h2>
+            <form action="">
+                <div>
+                    <input type="text" name="nome" placeholder="Nome Completo" required>
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <textarea name="mensagem" placeholder="Digite sua mensagem" rows="5"></textarea>
+                </div>
+                <div>
+                    <button class="btn btn-primario">ENVIAR MENSAGEM</button>
+                </div>
+            </form>
+            <div class="contato_github">
+                <button class="btn">
+                    <a href="https://github.com/PPedrinho" target="_blank">
+                        <i class="fa-brands fa-github"></i> Github
+                    </a>
+                </button>
             </div>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; Direitos Reservados - <span>Pedro Lima</span> </p>
+    </footer>
+
+    <!-- JS -->
+    <script src="./assets/js/script.js"></script>
+
 </body>
 </html>
